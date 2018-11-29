@@ -1,0 +1,32 @@
+ {
+    "project": {
+        "title": "11034 - EXERCISE WEEK 12",
+        "creator": "Students s153916 and s154449"
+    },
+    "tabs": [
+        {
+            "title": "0: Info",
+            "query": "",
+            "triples": "",
+            "description": "This is the SPARQL visualizer. It lets you visualize an query graph data represented in the [RDF](https://www.w3.org/TR/rdf11-primer/) language."
+        },
+        {
+  "title": "2.1-2.2: Indoor climate in Auditorium 83",
+  "query": "CONSTRUCT\nWHERE {\n\t?nodeA ?edge ?nodeB\n}",
+  "triples": "<DTU> <is_a> <University> .\n<DTU> <was_founded_by> <H.C.Ørsted> .\n<Auditorium_83> <is_located_at> <DTU> .\n<People> <present_in> <Auditorium_83> .\n<People> <is_a> <Source_of_Heat> .\n<People> <is_a> <Source_of_Noise> .\n<Electrical_Device> <is_a> <Source_of_Heat> .\n<Electrical_Device> <is_a> <Source_of_Noise> .\n<People> <experience> <Comfort> .\n<Comfort> <is_affected_by> <Furniture> .\n<Comfort> <is_affected_by> <Indoor_Climate> .\n<Indoor_Climate> <consists_of> <Room_Temperature> .\n<Indoor_Climate> <consists_of> <Artificial_Lighting> .\n<Indoor_Climate> <consists_of> <Room_Acoustics> .\n<Room_Acoustics> <is_affected_by> <Furniture> .\n<Room_Acoustics> <is_affected_by> <Source_of_Noise> .\n<Room_Temperature> <is_affected_by> <Source_of_Heat> .\n<Artificial_Lighting> <is_a> <Electrical_Device> .\n<Auditorium_83> <is_a> <Room> .\n<Auditorium_83> <contains_element> <Furniture> .",
+  "description": "In this graph parts of the indoor climate of auditorium 83 in building 116 at DTU is portrayed.\n\nIn this first dataset the data from a graph dawn by hand is described in the triples tap. From this a digital graph is drawn in the programme."
+},
+{
+  "title": "2.3: Indoor climate in Auditorium 83",
+  "query": "SELECT DISTINCT ?edge\nWHERE {\n\t?nodeA ?edge ?nodeB\n}",
+  "triples": "<DTU> <is_a> <University> .\n<DTU> <was_founded_by> <H.C.Ørsted> .\n<Auditorium_83> <is_located_at> <DTU> .\n<People> <present_in> <Auditorium_83> .\n<People> <is_a> <Source_of_Heat> .\n<People> <is_a> <Source_of_Noise> .\n<Electrical_Device> <is_a> <Source_of_Heat> .\n<Electrical_Device> <is_a> <Source_of_Noise> .\n<People> <experience> <Comfort> .\n<Comfort> <is_affected_by> <Furniture> .\n<Comfort> <is_affected_by> <Indoor_Climate> .\n<Indoor_Climate> <consists_of> <Room_Temperature> .\n<Indoor_Climate> <consists_of> <Artificial_Lighting> .\n<Indoor_Climate> <consists_of> <Room_Acoustics> .\n<Room_Acoustics> <is_affected_by> <Furniture> .\n<Room_Acoustics> <is_affected_by> <Source_of_Noise> .\n<Room_Temperature> <is_affected_by> <Source_of_Heat> .\n<Artificial_Lighting> <is_a> <Electrical_Device> .\n<Auditorium_83> <is_a> <Room> .\n<Auditorium_83> <contains_element> <Furniture> .",
+  "description": "In this graph parts of the indoor climate of auditorium 83 in building 116 at DTU is portrayed.\n\nIn this first dataset the data from a graph dawn by hand is described in the triples tap. From this a digital graph is drawn in the programme.\n\nTask 2.3\nIn this version the query has been edited, whereby the result will be the names of the edges given in a table"
+},
+{
+  "title": "2.4: Indoor climate in Auditorium 83",
+  "query": "CONSTRUCT\n\tWHERE {\n\t<Indoor_Climate> ?edge ?nodeB\n}",
+  "triples": "<DTU> <is_a> <University> .\n<DTU> <was_founded_by> <H.C.Ørsted> .\n<Auditorium_83> <is_located_at> <DTU> .\n<People> <present_in> <Auditorium_83> .\n<People> <is_a> <Source_of_Heat> .\n<People> <is_a> <Source_of_Noise> .\n<Electrical_Device> <is_a> <Source_of_Heat> .\n<Electrical_Device> <is_a> <Source_of_Noise> .\n<People> <experience> <Comfort> .\n<Comfort> <is_affected_by> <Furniture> .\n<Comfort> <is_affected_by> <Indoor_Climate> .\n<Indoor_Climate> <consists_of> <Room_Temperature> .\n<Indoor_Climate> <consists_of> <Artificial_Lighting> .\n<Indoor_Climate> <consists_of> <Room_Acoustics> .\n<Room_Acoustics> <is_affected_by> <Furniture> .\n<Room_Acoustics> <is_affected_by> <Source_of_Noise> .\n<Room_Temperature> <is_affected_by> <Source_of_Heat> .\n<Artificial_Lighting> <is_a> <Electrical_Device> .\n<Auditorium_83> <is_a> <Room> .\n<Auditorium_83> <contains_element> <Furniture> .",
+  "description": "In this graph parts of the indoor climate of auditorium 83 in building 116 at DTU is portrayed.\n\nIn this first dataset the data from a graph dawn by hand is described in the triples tap. From this a digital graph is drawn in the programme.\n\nTask 2.4\nIn this version the query has been edited, so that  the presented graph only display the nodes connected to the node \"Indoor_Climate\"."
+}
+    ]
+}
