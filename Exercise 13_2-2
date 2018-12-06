@@ -1,0 +1,26 @@
+ {
+    "project": {
+        "title": "11034 - EXERCISE 13",
+        "creator": "s154449 and s153916
+    },
+    "tabs": [
+{
+  "title": "Task 2.2a",
+  "query": "CONSTRUCT\nWHERE {\n\t?nodeA ?edge ?nodeB\n}",
+  "triples": "@prefix rdf:\t\t<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:\t\t<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd:\t\t<http://www.w3.org/2001/XMLSchema#> .\n@prefix bo:\t\t\t<http://www.bim.byg.dtu.dk/ontology#> .\n\n@prefix inst:\t\t<http://www.dtu.dk/20181203/YourName#> .\n\ninst:thisBuilding\n\trdf:type bo:Building ;\n    rdfs:label \"Building 118\" .\n\ninst:thisSpace \n\trdf:type bo:Space ;\n    rdfs:label \"Auditorium 81\" .\n\ninst:thisBuildingFounder\n\trdf:type bo:Person ;\n    rdfs:label \"H.C.Ørsted\" .\n\t\ninst:thisBuilding \n\tbo:hasSpace inst:thisSpace .\n\ninst:thisBuilding \n\tbo:hasBuildingFounder inst:thisBuildingFounder .",
+  "description": "Task 2.2a"
+},
+{
+  "title": "Task 2.2b",
+  "query": "SELECT DISTINCT ?edge\nWHERE {\n\t?nodeA ?edge ?nodeB\n}",
+  "triples": "@prefix rdf:\t\t<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:\t\t<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd:\t\t<http://www.w3.org/2001/XMLSchema#> .\n@prefix bo:\t\t\t<http://www.bim.byg.dtu.dk/ontology#> .\n\n@prefix inst:\t\t<http://www.dtu.dk/20181203/YourName#> .\n\ninst:thisBuilding\n\trdf:type bo:Building ;\n    rdfs:label \"Building 118\" .\n\ninst:thisSpace \n\trdf:type bo:Space ;\n    rdfs:label \"Auditorium 81\" .\n\ninst:thisBuildingFounder\n\trdf:type bo:Person ;\n    rdfs:name \"H.C.Ørsted\" .\n\t\ninst:thisBuilding \n\tbo:hasSpace inst:thisSpace .\n\ninst:thisBuilding \n\tbo:hasBuildingFounder inst:thisBuildingFounder .",
+  "description": "Task 2.2b"
+},
+{
+  "title": "Task 2.2.c",
+  "query": "PREFIX bo: <http://www.bim.byg.dtu.dk/ontology#>\n\nCONSTRUCT\nWHERE {\n\t?Person a bo:Person .\n    ?Person ?property ?value .\n}",
+  "triples": "@prefix rdf:\t\t<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:\t\t<http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd:\t\t<http://www.w3.org/2001/XMLSchema#> .\n@prefix bo:\t\t\t<http://www.bim.byg.dtu.dk/ontology#> .\n\n@prefix inst:\t\t<http://www.dtu.dk/20181203/YourName#> .\n\ninst:thisBuilding\n\trdf:type bo:Building ;\n    rdfs:label \"Building 118\" .\n\ninst:thisSpace \n\trdf:type bo:Space ;\n    rdfs:label \"Auditorium 81\" .\n\ninst:thisBuildingFounder\n\trdf:type bo:Person ;\n    rdfs:name \"H.C.Ørsted\" .\n\t\ninst:thisBuilding \n\tbo:hasSpace inst:thisSpace .\n\ninst:thisBuilding \n\tbo:hasBuildingFounder inst:thisBuildingFounder .",
+  "description": "Task 2.2c"
+}
+    ]
+}
