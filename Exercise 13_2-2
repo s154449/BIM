@@ -4,6 +4,12 @@
         "creator": "s154449 and s153916"
     },
     "tabs": [
+            {
+            "title": "0: Info",
+            "query": "",
+            "triples": "",
+            "description": "This is the SPARQL visualizer. It lets you visualize an query graph data represented in the [RDF](https://www.w3.org/TR/rdf11-primer/) language."
+        },
 {
   "title": "Task 2.2a",
   "query": "CONSTRUCT\nWHERE {\n\t?nodeA ?edge ?nodeB\n}",
